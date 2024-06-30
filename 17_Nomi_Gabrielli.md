@@ -36,8 +36,10 @@ Viene determinato tramite:
 - regole specifiche(visibilità)
     - esempio: 
         - visibilità di una variabie a partire dalla dichiarazione, fino a fine blocco
+
         ![alt text](image-172.png)
         - sempre visibile(dichiarazione di metodi)(questa si chiama mutua ricorsione)
+        
         ![alt text](image-173.png)
 - regole per il passaggio dei parametri
 - regole di binding(shallow o deep)
@@ -96,6 +98,7 @@ Un nome non locale è risolto nel blocco che testualmente lo racchiude
 
 *Esempio:*$\\$
 ![alt text](image-169.png)
+
 Stampa 0 perchè $pippo()$ modifica la $x$ del suo blocco
 
 - informazione completa dle testo del programma
