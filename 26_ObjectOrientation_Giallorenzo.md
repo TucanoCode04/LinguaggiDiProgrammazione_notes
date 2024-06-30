@@ -118,4 +118,65 @@ Oltre a private e public, vogliamo implementare metodi per cui la sottoclasse pu
 *Riassumendo:*$\\$
 ![alt text](image-294.png)
 
-**Classi astratte:**$\\$
+*Classi astratte:*$\\$
+Via di mezzo tra classi e interfacce in quanto possono definire campi e implementazioni di metodi, ma anche lasciare metodi astratti da far implementare alle sottoclassi.$\\$
+
+*Top: relazione di sottotipo:*$\\$
+La relazione di sottotipo è transitiva, riflessiva e antisimmetrica.$\\$
+Quindi certe relazioni cicliche non potrebbero esistere. Ma certilinguaggi implementano un tipo padre di tutti i tipi, che è il tipo top(object in Java).$\\$
+
+Così adesso possono esistere anche i tipi intersezioni: $S <: T \land R$(intersezione dei valori che abitano sia in $S$ che in $T$).$\\$
+
+**Costruttori:**$\\$
+metodi speciali che accettano alcuni parametri e ritornano un oggetto della classe.$\\$
+Per creare un oggetto bisogna:
+- allocare la memoria necessaria
+- inizializzare i campi(collegando anche i campi della superclasse)
+![alt text](image-295.png)
+
+In certi linguaggi il costruttore è chiamato con il nome della classe, usando le regole di sovraccarico.$\\$
+
+Nei diversi linguaggi i costruttori possono prima chiamare il costruttore della superclasse e poi inizializzare i campi della sottoclasse oppure va specificato dall'utente quindi inizializza solo i campi della sottoclasse.$\\$
+
+**Ereditarietà singola vs multipla:**$\\$
+In certi linguaggi l'ereditarietà è rappresentata d aun albero, quindi si ha un solo padre, quindi ereidtarietà singola.$\\$
+Altri linguaggi permettono a una classe di ereditare metodi e campi da più superclassi, quindi ereditarietà multipla e la gerarchia è mostrata con un DAG(Directed Acyclic Graph).$\\$
+Il problema deriva dai nomi dei metodi, che potrebbero essere uguali e quindi creare ambiguità. Le uniche soluzioni sono vietare sintatticamente i cnflitti o  risolverli esplicitamente.$\\$
+
+*Deadly Diamond of Death:*$\\$
+![alt text](image-296.png)
+
+**Dispatch dinamico di metodi:**$\\$
+E' l'overriding di metodi. Una sottoclasse ridefinisce l'implementazione di un metodo in modo che il metodo invocato dipenda dal tipo dell'oggetto e non dal tipo della variabile.$\\$
+Il dispatch è dinamico perchè conosciamo ill tipo dell'oggetto solo a tempo di esecuzione.$\\$
+Simile all'overloading(early binding) ma il metodo viene scelto a tempo di esecuzione(late binding).$\\$
+![alt text](image-297.png)
+
+**Metodi statici:**$\\$
+metodi che il compilatore può risolvere staticamente, in quanto indipendenti dall'istanza dell'oggetto.$\\$
+Non possono essere sovrascritti, ma solo sovraccaricati.$\\$
+Con il sottotipaggio, i metodi statici possono essere invocati su un oggetto di tipo superclasse, ma verrà invocato il metodo della superclasse.$\\$
+![alt text](image-298.png)
+
+**Aspetti di implementazione:**$\\$
+![alt text](image-299.png)
+![alt text](image-300.png)
+![alt text](image-301.png)
+![alt text](image-302.png)
+![alt text](image-303.png)
+![alt text](image-304.png)
+![alt text](image-305.png)
+
+**Polimorfismo parametrico e generici:**$\\$
+Il polimorfiismo parametrico è un meccanismo che permette di scrivere codice che funziona su un insieme di tipi.$\\$
+La differenza tra polimorfismo parametrico e generici è che il primo è implicito, mentre il secondo è esplicito.$\\$
+
+*Type erasure:*$\\$
+Grazie al type erasure, tutte le istanza di una classe generica condividono lo stesso codice, il compilatore cancella tutto i parametri dal codice e tutti gli oggetti della classe generica diventano istanze di Top.$\\$
+Crea problemi perchè dopo non possiamo usare new perchè non sa che tipo creare.$\\$
+Si può risolvere con la reificazione, che consiste nel mantenere le informazioni sui tipi a tempo di esecuzione(witness).$\\$
+
+*Wildcard:*$\\$
+E' un supertipo di tutti i tipi generici, quindi possiamo usare un wildcard per indicare che un tipo è generico.$\\$
+Può indicare co(ntro)varianza del sottotipaggio $T < ? extends S>$( consente l'uso di S e dei suoi sottotipi) o controvarianza del sottotipaggio $T < ? super S>$(consente l'uso di S e dei suoi supertipi).$\\$
+

@@ -52,6 +52,8 @@ First può essere esteso a $\alpha \in (NT \cup T)^*$ come segue: $\\$
 ![alt text](image-124.png)
 
 In pratica bisogna cercare tutte le produzioni in cui $Y \in NT$ appare e applicare la 1 o la 2.
+Se è a fine produzione inserisco anche i Follow della produzione.
+Se è a metà produzione, insierisco i First della parte successiva.
 
 *Esempio*: $\\$
 ![alt text](image-125.png)

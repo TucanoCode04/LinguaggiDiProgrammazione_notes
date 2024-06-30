@@ -141,5 +141,6 @@ La differenza tra implementazione di tipo compilativo e interpretativo è data d
 Per implementare $L$ si scrive un interprete $I^H_{L}$ o un compilatore $C^H_{L, Lo}$ in $H$($\subsetneq L$). Si implementa poi un interprete o un compilatore per $H$.
 
 **Implementazione via bootstraping:**$\\$
-$I^{Lo}_{P-code}(C^{P-code}_{Pascal, P-code}, C^{Pascal}_{Pascal, Lo}) = C^{P-code}_{Pascal, Lo}$$\\$
+$I^{Lo}_{P-code}(C^{P-code}_{Pascal, P-code}, C^{Pascal}_{Pascal, Lo}) = C^{P-code}_{Pascal, Lo}$
+$\\$
 $I^{Lo}_{P-code}(C^{P-code}_{Pascal, Lo}, C^{Pascal}_{Pascal, Lo}) = C^{Lo}_{Pascal, Lo}$
