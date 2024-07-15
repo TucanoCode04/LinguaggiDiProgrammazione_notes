@@ -125,7 +125,7 @@ Via di mezzo tra classi e interfacce in quanto possono definire campi e implemen
 La relazione di sottotipo è transitiva, riflessiva e antisimmetrica.$\\$
 Quindi certe relazioni cicliche non potrebbero esistere. Ma certilinguaggi implementano un tipo padre di tutti i tipi, che è il tipo top(object in Java).$\\$
 
-Così adesso possono esistere anche i tipi intersezioni: $S <: T \land R$(intersezione dei valori che abitano sia in $S$ che in $T$).$\\$
+Così adesso possono esistere anche i tipi intersezioni: $S <: T \land R$(intersezione dei valori che abitano sia in $T$ che in $R$).$\\$
 
 **Costruttori:**$\\$
 metodi speciali che accettano alcuni parametri e ritornano un oggetto della classe.$\\$
