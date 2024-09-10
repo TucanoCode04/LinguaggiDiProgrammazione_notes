@@ -1961,3 +1961,257 @@ D
 
 ![alt text](image-431.png)
 ![alt text](image-432.png)
+
+
+## Domande laboratorio
+
+1. Diversi tipi di classi in java: nested, inner, local, anonymous
+
+**Risposta:** Le nested class sono classi definite all'interno di un'altra classe, le classi dei layer più interni utilizzano solo gli attributi statici della classe esterna. Le inner class sono classi nested ma che pososno usarne gli attributi non statici. Le local class sono classi definite all'interno di un metodo.
+
+Le inner class non pososno avere membri statici, ma pososno essere locali o anonime.
+
+![alt text](image-433.png)
+
+2. Interfacce
+
+**Risposta:** Un interfaccia è una classe che non può essere instanziata, ma fornisce die metodi che devono essere implementati dalle classi che la implementano. Le interfacce possono contenere metodi astratti, metodi di default, metodi statici e costanti, tutti pubblici. I metodi default e astratti vengono ereditati come metodi di istanza. Dove questi ultimi sono preferiti rispetto ai metodi default.
+I metodi già overridati veongono ignorati.
+
+![alt text](image-434.png)
+![alt text](image-435.png)
+![alt text](image-437.png)
+![alt text](image-436.png)
+
+3. Overriding di metodi
+
+**Risposta:** Se c'è conflitto i metodi vanno overridati esplicitamente. Metodi ereditati da altre classi possono ovverridare metodi di interfaccia.
+![alt text](image-439.png)
+![alt text](image-438.png)
+![alt text](image-440.png)
+
+4. Summary default methods
+
+**Risposta:** I metodi statici non possono essere overridati e danno un comportamento generale della classe. I metodi default possono essere overridati e permettono alla classe id evolversi.
+![alt text](image-441.png)
+
+5. Classi anonime
+
+**Risposta:** Le classi anonime sono classi senza nome che si comportano come classi locali. Possono essere definite e instanziate allo stesso tempo. Le si utilizza se ti serve una classe locale solo una volta. 
+![alt text](image-443.png)
+
+In questo esmepio al posto di creare o una inner class dentro alla calcolatrice, oppure di scrivere direttamente l'implementazione dentro al classe calcolatrice, si crea una classe anonima che implementa l'interfaccia Operation e si crea un oggetto di questa classe anonima.(?)
+
+6. Event listeners
+
+**Risposta:** Se diversi, per esmepio bottoni, devono fare la stessa cosa, si può creare un listener che implementa l'interfaccia ActionListener e poi si aggiunge il listener a tutti i bottoni.
+![alt text](image-442.png)
+
+7. Paradigmi di Python
+
+**Risposta:** Scripting:$\\$
+![alt text](image-444.png)
+
+Il tipaggio è dinamico.
+
+Imperative, functional, object oriented.
+
+8. Pass, continue, break
+
+**Risposta:** $\\$
+![alt text](image-446.png)
+![alt text](image-445.png)
+
+9. getopt
+
+**Risposta:** getopt è un modulo di Python che permette di analizzare gli argomenti della riga di comando uno per uno. $\\$
+![alt text](image-447.png)
+
+10. Lambda functions
+
+**Risposta:** Le lambda functions sono funzioni anonime, solitamente chiamate come parametro di altre funzioni. $\\$
+![alt text](image-448.png)
+
+11. Global e nonlocal
+
+**Risposta:** global permette di dichiarare una variabile come globale, nonlocal permette di dichiarare una variabile locale in uno scope superiore. $\\$
+
+12. Default
+
+**Risposta:** Vengono valutati solo una volta, al momento della definizione della funzione. $\\$
+![alt text](image-449.png)
+
+13. Namespaces
+
+**Risposta:** I namespaces sono tutti i nomi associati ad oggetti visbili in un certo punto del programma. $\\$
+
+14. Functional language: overloading
+
+**Risposta:** Se definiamo una funzione con lo stesso nome più volte, l'ultima definizione sovrascrive le precedenti. $\\$
+
+15. Polimorfismo del +
+
+**Risposta:** Se il + è usato con due stringhe, concatena le stringhe. Se è usato con due numeri, somma i numeri. $\\$
+
+16. Lazy evaluation
+
+**Risposta:** Lazy evaluation è una tecnica di valutazione che ritarda l'esecuzione di un'espressione fino a quando il suo valore non è necessario. $\\$
+![alt text](image-450.png)
+
+17. List comprehension
+
+**Risposta:** Le list comprehension sono una forma concisa di creare liste in Python. $\\$
+![alt text](image-451.png)
+
+18. Set and dictionary comprehension
+
+**Risposta:** $\\$
+![alt text](image-452.png)
+
+19. init e classi
+
+**Risposta:** init è un metodo speciale che viene chiamato quando un oggetto viene creato, come il costruttore di una classe. Le classi utilizzano self per riferirsi all'istanza corrente della classe. Per definire i metodi si utilizza un decoratore. $\\$
+
+![alt text](image-453.png)
+
+20. metodi statici, private e protected
+
+**Risposta:** $\\$
+![alt text](image-454.png)
+
+21. Ereidtarietà in Python
+
+**Risposta:** $\\$
+![alt text](image-455.png)
+
+22. init in classi ereditate
+
+**Risposta:** Le classi che ereditano, se non hanno l'init, ereditano quello della classe padre e così via. $\\$
+![alt text](image-456.png)
+
+23. Operator overloading, magic methods
+
+**Risposta:** Le double underscore methods sono chiamate magic methods e permettono di definire il comportamento di operatori e funzioni built-in. $\\$
+![alt text](image-457.png)
+![alt text](image-458.png)
+
+Altre double underscore functions che copiamo la struttura di C++ $\\$
+![alt text](image-459.png)
+![alt text](image-460.png)
+
+24. Oggetto in Python
+
+**Risposta:** Gli oggetti in Python contengono un'identità, un valore e un tipo. Definisce che il tipo animal è un istanza della classe Animal che dfinita nel modulo rpincipale. $\\$
+![alt text](image-461.png)
+
+L'oggetto ha un tipo e anche "type" è un oggetto. $\\$
+![alt text](image-462.png)
+
+![alt text](image-468.png)
+
+25. Reflection e Reflection primitives
+
+**Risposta:** Reflection è la capacità di un programma di esaminare e modificare la sua struttura e comportamento durante l'esecuzione. Le reflection primitives sono funzioni built-in che permettono di esaminare e modificare gli oggetti e i moduli. Tipo type e dir. $\\$
+![alt text](image-463.png)
+![alt text](image-464.png)
+
+26. __base__ e __class__
+
+**Risposta:** __base__ è un attributo che contiene la classe base di una classe, __class__ è un attributo che contiene la classe di un'istanza. $\\$
+![alt text](image-465.png)
+
+27. __object__ e __type__
+
+**Risposta:** __object__ è la classe base di tutte le classi, __type__ è la classe di tutte le classi. $\\$
+![alt text](image-466.png)
+
+In UML $\\$
+![alt text](image-467.png)
+
+28. Python è fatto come un abstract factory e metaclassi
+
+**Risposta:** Tutto è un `object`, ogni object ha un `type`, dove type è un object. $\\$ `type` è identificato da un `__base__`, dove la classe base è identificata da `__class__`. $\\$
+Le metaclassi sono classi dove le istanze sono classi, vengono utilizzate per creare classi e l'istanziazione di classi. $\\$
+
+29. Referenza al clone design pattern
+
+**Risposta:** Gli oggetti possono essere creati subclassando. $\\$
+![alt text](image-469.png)
+
+30. Instanziazione di nuovi oggetti
+
+**Risposta:** $\\$
+![alt text](image-470.png)
+
+31. Instanziazione di nuovi tipi
+
+**Risposta:** $\\$
+![alt text](image-471.png)
+
+Possono essere ritornati come valori di funzioni. $\\$
+![alt text](image-472.png)
+
+32. Processo di creazione di un oggetto
+
+**Risposta:** La creazione ha due step: __new__() per allocare la memoria e __init__() per inizializzare i dati. L'oggetto originale è passato a __init__() come reference. $\\$
+
+33. Processo di creazione di un oggetto con metaclassi
+
+**Risposta:** Può essere controllato con le metaclassi. C'è un protocollo da seguire, che usa template pattern basato su overriding e late binding. $\\$
+
+Esiste anch eil metodo __call__() che chiama gli altri due metodi ogni volta che un tupo object è chiamato per creare un'istanza. $\\$
+![alt text](image-473.png)
+
+34. Utilizzo di tupe come metaclasse
+
+**Risposta:** $\\$
+![alt text](image-474.png)
+
+35. Implementazione dle singleton pattern
+
+**Risposta:** $\\$
+![alt text](image-475.png)
+![alt text](image-476.png)
+![alt text](image-477.png)
+
+36. Metaclassi
+
+**Risposta:** Ricordiamo che in python tutto è un oggetto, anche le classi. $\\$
+
+Classe animal derivata implicitamente da classe object. Oggetto animal istanza di class type. $\\$
+![alt text](image-478.png)
+![alt text](image-479.png)
+
+37. Quindi è possibile epr Animal produrre altre classi?
+
+**Risposta:** Definiamo una sottoclasse di classe type. Una classe AnimalTYpe è derivata da class type esplicitamente. Un oggetto AnimalType è un'istanza della classe type. $\\$
+![alt text](image-480.png)
+
+Quindi creiamo una classe NAimal con metaclasse animalType, quindi il suo oggetto è un istanza di animalType. $\\$
+![alt text](image-481.png)
+
+38. Esempio di metaclassi
+
+**Risposta:** $\\$
+![alt text](image-482.png)
+
+La __call__ orchestra la creazione dell'oggetto di classe Animal. Appplicazione del Template pattern. $\\$
+Esso chiama __new__ e __init__ per creare l'oggetto, poi La metaclasse ha il proprio __call__(cls, *args, **kwargs) dove cls è il rifereimento alla metaclasse, che hciama il proprio new e init. $\\$
+![alt text](image-483.png)
+![alt text](image-484.png)
+![alt text](image-485.png)
+
+Dopo utilizza __prepare__ per creare il namespace della classe. $\\$
+
+39. Singleton con metaclassi
+
+**Risposta:** $\\$
+![alt text](image-486.png)
+
+Esecuzione del codice $\\$
+![alt text](image-487.png)
+
+40. Generalizzazione del singleton
+
+**Risposta:** $\\$
+![alt text](image-488.png)
